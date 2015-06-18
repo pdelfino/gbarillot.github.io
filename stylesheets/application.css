@@ -2455,3 +2455,8 @@ pre {
   background: transparent;
   border-style: none;
   padding: initial; }
+
+/* line 11, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+.rounded {
+  border-radius: 50%;
+  width: 150px; }
