@@ -5,21 +5,82 @@
   <id>http://www.guillaume-barillot.com</id>
   <link href="http://www.guillaume-barillot.com"/>
   <link href="http://www.guillaume-barillot.com/feed.xml" rel="self"/>
-  <updated>2013-10-26T02:00:00+02:00</updated>
+  <updated>2014-02-22T01:00:00+01:00</updated>
   <author>
     <name>Guillaume</name>
   </author>
   <entry>
-    <title>Hi,</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2013/10/26/welcome-to-ghost/"/>
-    <id>http://www.guillaume-barillot.com/2013/10/26/welcome-to-ghost/</id>
-    <published>2013-10-26T02:00:00+02:00</published>
-    <updated>2015-06-18T21:31:57+02:00</updated>
+    <title>Fifteen years using linux... and I just switched to a Mac</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2014/02/22/Fifteen-years-using-linux-and-I-just-switched-to-a-Mac/"/>
+    <id>http://www.guillaume-barillot.com/2014/02/22/Fifteen-years-using-linux-and-I-just-switched-to-a-Mac/</id>
+    <published>2014-02-22T01:00:00+01:00</published>
+    <updated>2015-06-18T23:27:06+02:00</updated>
     <author>
       <name>Guillaume</name>
     </author>
-    <summary type="html">My name is Guillaume Barillot and I&amp;rsquo;m living in Lyon, France.
-Aside from coding Rails apps, I&amp;rsquo;m a happy/busy father of two baby boys.
-</summary>
+    <summary type="html">I still remember my first met with Linux, back in 1998… I instantly embraced the Open Source philosophy. I also doomed the data on my hard drive and it took me 2 days of tough work to get this Red Hat 5.1 up and running, but I really enjoyed this stuff</summary>
+  </entry>
+  <entry>
+    <title>Ma life (de développeur Freelance)</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2013/07/18/Ma-life-de-dveloppeur-Freelance/"/>
+    <id>http://www.guillaume-barillot.com/2013/07/18/Ma-life-de-dveloppeur-Freelance/</id>
+    <published>2013-07-18T02:00:00+02:00</published>
+    <updated>2015-06-18T23:27:46+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Edit
+ : ça n'est que mon retour d'expérience, et uniquement le mien (assez particulier en plus de ça, voir la fin). Je ne prétend pas du tout couvrir toute la diversité des situations de dév. Web, sans même parler des autres sphères de développeurs (J2EE</summary>
+  </entry>
+  <entry>
+    <title>Switch from Selenium+Firefox to Poltergeist+Phantomjs and speed up your test suite </title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2013/03/23/Switch-from-SeleniumFirefox-to-PoltergeistPhantomjs-and-speed-up-your-test-suite-/"/>
+    <id>http://www.guillaume-barillot.com/2013/03/23/Switch-from-SeleniumFirefox-to-PoltergeistPhantomjs-and-speed-up-your-test-suite-/</id>
+    <published>2013-03-23T01:00:00+01:00</published>
+    <updated>2015-06-18T23:27:53+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Selenium is a great tool for integration testing but it has two major drawbacks :*it relies on Firefox engine, so every time Firefox updates, you have to cross your finger and praise your test suite will still be usable
+
+it is f*** slow
+Solve those 2</summary>
+  </entry>
+  <entry>
+    <title>Paperclip caching and clean URLs or DragonFly on the fly image resizing ? Get the best of both worlds !</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/11/16/Paperclip-caching-and-clean-URLs-or-DragonFly-on-the-fly-image-resizing-Get-the-best-of-both-worlds-/"/>
+    <id>http://www.guillaume-barillot.com/2012/11/16/Paperclip-caching-and-clean-URLs-or-DragonFly-on-the-fly-image-resizing-Get-the-best-of-both-worlds-/</id>
+    <published>2012-11-16T01:00:00+01:00</published>
+    <updated>2015-06-18T23:27:58+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">When it came across image manipulation using Rails, I had to make a choice : Paperclip to handle high traffic/popular websites, and DragonFly for privates, more confidential but also more evolutive applications.
+
+Let’s start with an example :# Paperclip</summary>
+  </entry>
+  <entry>
+    <title>SCSS vs Sass vs CSS : mon humble avis</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/"/>
+    <id>http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/</id>
+    <published>2012-09-22T02:00:00+02:00</published>
+    <updated>2015-06-18T23:28:04+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">EDIT : J'ai changé d'avis ! Enfin, pas tout à fait, mais je voudrais juste clarifier mon point de vue : si il s'agit juste de monter un Wordpress en one-shot, oui, je maintiens. Par contre si vous créez une appli un minimum complexe, et à fortiori si</summary>
+  </entry>
+  <entry>
+    <title>Gérer correctement les accents avec Ruby, Rails et upcase</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/"/>
+    <id>http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/</id>
+    <published>2012-08-14T02:00:00+02:00</published>
+    <updated>2015-06-18T23:28:09+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">C'est assez étonnant d'avoir encore ce genre de problème de nos jours, mais Ruby (même 1.9.3), ne gère toujours pas correctement les passages de caractères accentués en majuscule. Explication :&amp;gt; puts “café”.upcase
+CAFé
+Pas terrible, hein ? Une solution</summary>
   </entry>
 </feed>

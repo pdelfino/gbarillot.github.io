@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guillaume Barillot: SCSS vs Sass vs CSS : mon humble avis</title>
+<meta content='EDIT : J&amp;#39;ai changé d&amp;#39;avis ! Enfin, pas tout à fait, mais je voudrais juste clarifier mon point de vue : si il s&amp;#39;agit juste de monter...' name='description'>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='True' name='HandheldFriendly'>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+<body class='post-template nav-closed'>
+<div class='nav'>
+<h3 class='nav-title'>Menu</h3>
+<a class='nav-close' href='#'>
+<span class='hidden'>Close</span>
+</a>
+<ul>
+<li class='nav-home' role='presentation'>
+<a href='/'>Home</a>
+</li>
+</ul>
+<a class='subscribe-button icon-feed' href='/feed.xml'>Subscribe</a>
+</div>
+<span class='nav-cover'></span>
+
+<div class='site-wrapper'>
+<header class='main-header no-cover post-head'>
+<nav class='main-nav clearfix'>
+<a class='menu-button icon-menu' href='#'>
+<span class='word'>Menu</span>
+</a>
+</nav>
+</header>
+<main class='content' role='main'>
+<article class='post'>
+<header class='post-header'>
+<h1 class='post-title'>SCSS vs Sass vs CSS : mon humble avis</h1>
+<section class='post-meta'>
+<time class='post-date' datetime='2012-09-22'>
+22 September 2012
+</time>
+on <a href='/tag/la-technique/'>la-technique</a>
+</section>
+</header>
+<section class='post-content'><p>EDIT : J&#39;ai changé d&#39;avis ! Enfin, pas tout à fait, mais je voudrais juste clarifier mon point de vue : si il s&#39;agit juste de monter un Wordpress en one-shot, oui, je maintiens. Par contre si vous créez une appli un minimum complexe, et à fortiori si vous êtes plusieurs, l&#39;utilisation de SASS simplifie énormément la maintenabilité et améliore considérablement la pérennité du code. C&#39;est un peu ce que je disais déja en guise de conclusion, mais je voulais juste insister là-dessus : je ne suis pas &ldquo;contre&rdquo; les pré-processeurs, je dis juste que ça ne fait pas toujours gagner du temps.
+Cela fait maintenant un an que j&#39;ai commencé à m&#39;intéresser à Sass et aux pré-processeurs CSS en général. Au début, c&#39;est forcément &ldquo;whaoooo&rdquo;. 1 an plus tard, je suis plus critique sur la chose. Petit rappel des bidules en questions :</p>
+
+<h4>CSS</h4>
+
+<p>ul.main-list {
+  margin-left: 20px;
+ }</p>
+
+<p>ul.main-list li {
+  list-style-type: square;
+  display: block;
+  border: 1px solid red;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}</p>
+
+<p>ul.main-list li a {
+  color: #fff;
+  text-decoration: none;
+}</p>
+
+<h4>SCSS</h4>
+
+<p>$color: $fff;</p>
+
+<p>ul.main-list {
+  margin-left: 20px;
+  li {
+    list-style-type: square;
+    display: block;
+    border: 1px solid red;
+    @include border-radius(5);
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+  }
+}</p>
+
+<h4>Sass</h4>
+
+<p>$color: $fff</p>
+
+<p>ul.main-list
+  margin-left: 20px
+  li
+    list-style-type: square
+    display: block
+    border: 1px solid red
+    @include border-radius(5)
+    a
+      color: $color
+      text-decoration: none
+ </p>
+
+<p>Cooool, on peut donc utiliser des variables ($color dans l&#39;exemple), et même des &ldquo;fonctions&rdquo; (= &ldquo;mixins&rdquo;) permettant de rassembler les vendor préfix dans un seul fichier ! Dorénavant, si le client veut changer la couleur des polices on a qu&#39;à le changer à un seule et unique endroit ! Avec l&#39;asset pipeline de Rails, on peut même proprement séparer chaque partie (menus, widgets, navbar&hellip;) et tout hierarchiser !</p>
+
+<p>Fantastique, donc, sauf que&hellip; sauf que dans la vraie vie 
+<strong>ça se passe comme ça :</strong></p>
+
+<h4>CSS</h4>
+
+<p>*J&#39;ouvre l&#39;éditeur de chrome (ou firebug) : 1 sec</p>
+
+<p>*Je fais une recherche sur l&#39;expression &ldquo;main-menu&rdquo; : 1 sec</p>
+
+<p>*Je modifie le style de ma liste&hellip; oups, j&#39;ai du mal fermer une accolade, tout part en vrille&hellip; voila, c&#39;est ici : 10 sec</p>
+
+<p>*clic droit, &ldquo;save&rdquo; : 1 sec
+==&gt; Total : 13 secondes</p>
+
+<p> </p>
+
+<h4>SCSS</h4>
+
+<p>*J&#39;ouvre mon éditeur de texte et je cherche mon fichier&hellip; : 5 sec</p>
+
+<p>*Ha non, c&#39;est pas dans &ldquo;lists.scss&rdquo;, mais dans &ldquo;menus.scss&rdquo; : 5 sec</p>
+
+<p>*Je modifie le style de ma liste, je reviens dans le navigateur pour faire un refresh : 10 sec</p>
+
+<p>*Flute, ça compile pas j&#39;ai mal fermé une accolade. Retour, recherche&hellip; : 10 sec</p>
+
+<p>*Refresh qui va jusqu&#39;au bout. J&#39;ai Twitter Bootstrap et une appli conséquente dans les assets, c&#39;est long : 10 sec
+==&gt; Total : 40 secondes</p>
+
+<p> </p>
+
+<h4>Sass</h4>
+
+<p>*J&#39;ouvre mon éditeur de texte et je cherche mon fichier&hellip; : 5 sec</p>
+
+<p>*Ha non, c&#39;est pas dans &ldquo;lists.sass&rdquo;, mais dans &ldquo;menus.sass&rdquo; : 5 sec</p>
+
+<p>*Je modifie le style de ma liste : 10 sec</p>
+
+<p>*Refresh du browser. J&#39;ai Twitter Bootstrap et une appli conséquente dans les assets, c&#39;est long : 10 sec
+==&gt; Total : 30 secondes</p>
+
+<p>Voila, tout est dit. Au minimum vous allez diviser votre productivité par 3. Juste une petite mention spéciale pour Sass qui permet vraiment une lisibilité inégalée, mais bon&hellip; à quel coût. C&#39;est un exemple un peu caricatural mais l&#39;idée est là, et totalement non discutable : rien ne peut aller plus vite pour éditer une CSS que l&#39;éditeur du Browser. Faire un refresh à chaque modif, c&#39;est aller droit dans le mur. D&#39;autant que Rails n&#39;est pas le truc le plus rapide qui soit, et que des dizaines d&#39;assets à loader (si vous avez bien réparti vos fichiers) ça prend un max de temps. TROP de temps.</p>
+
+<p>Alors ok, après, on va me dire : &ldquo;oui mais le jour ou le client voudra changer la couleur de police&hellip;&rdquo;. Certes, 
+. Le grand cimetière des applis oubliés qui n&#39;ont jamais vu de clients est rempli de code écrit pour &ldquo;le jour où&rdquo;. Sauf que ce jour n&#39;est jamais arrivé. D&#39;ailleurs, il n&#39;arrive <em>jamais</em> dans la vraie vie. Le client valide une maquette : vous l&#39;intégrez. Point.</p>
+
+<p>Et puis même&hellip;
+. Vous êtes tombé sur un perfectionniste de la dernière heure qui vous demande de modifier un arrondi sur les angles de trois boutons, alors que la maquette est déja validée et intégrée (admettons). Franchement, ça va vous prendre moins de 3 minutes de le faire à la main, en le changeant pour chaque préfixe vendeur. Certes, ça va être casse pied et pas valorisant, mais ce sera fait et bien fait en 3 minutes. 3 minutes, ce n&#39;est vraiment rien par rapport à tout ce que vous allez gagner comme temps en ne passant pas par un preprocesseur, et je le répète, il ne s&#39;agit que d&#39;un cas <strong>hypothétique</strong>.</p>
+
+<p>Par ailleurs, tout coder dans un fichier en pur CSS ne veut pas forcément dire &ldquo;crade&rdquo; ! Rien n&#39;empêche de clairement sectionner le code, et vous tenir à certaines conventions. On peut aussi &ldquo;émuler&rdquo; les mixins, en créant une class &ldquo;rounded&rdquo;, par exemple, que vous utiliserez pour arrondir les coins sur les blocs ou boutons avec un simple &ldquo;class=&lsquo;my-div rounded&rsquo;&rdquo;. Simple, efficace, propre&hellip; et productif.</p>
+
+<p>Enfin bref, vous l&#39;aurez compris, mon avis après un an d&#39;utilisation est plus que mitigé : les préprocesseurs CSS, c&#39;est juste parfait pour produire un très joli code bien organisé (IMHO, les fichiers Sass sont hyper lisibles. J&#39;adore). C&#39;est bien mais le cout en productivité est énorme. Maintenant, si votre impératif c&#39;est de livrer des tonnes de features dans le vrai monde des clients pressés dont le budget est limité : rien ne vaut UNE bonne vieille CSS qu&#39;on édite directement dans le Browser.</p>
+
+<p><strong>Cas particulier</strong>
+ : votre projet est Open Source et/ou clairement destiné à être repris par d&#39;autres. Soyez sympa envers ceux qui vont reprendre votre oeuvre : même si vous codez d&#39;abord tout dans une seule CSS, 
+, prennez quelques minutes pour splitter les fichiers et les basculer en Sass (grâce à l&#39;excellent 
+<a href="http://css2sass.heroku.com/">CSS to Sass</a> par exemple). Mais là on parle d&#39;une appli clairement faite, par nature, pour que le code soit modifié. Rien à voir donc avec le cas général ou le code est destiné à rentrer en production le plus vite possible et ne plus bouger pendant des mois, voire des années.</p>
+</section>
+<footer class='post-footer'>
+<section class='author'>
+<h4>
+<a href='/author/guillaume/'>Guillaume</a>
+</h4>
+<p></p>
+Read
+<a href='/author/guillaume/'>more posts</a>
+by this author.
+</section>
+<section class='share'>
+<h4>Share this post</h4>
+<a class='icon-twitter' href='https://twitter.com/share?text=SCSS vs Sass vs CSS : mon humble avis&amp;amp;url=http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/' onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+<span class='hidden'>Twitter</span>
+</a>
+<a class='icon-facebook' href='https://www.facebook.com/sharer/sharer.php?u=http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/' onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+<span class='hidden'>Facebook</span>
+</a>
+<a class='icon-google-plus' href='https://plus.google.com/share?url=http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/' onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+<span class='hidden'>Google+</span>
+</a>
+</section>
+</footer>
+</article>
+</main>
+<aside class='read-next'>
+<a class='no-cover read-next-story' href='/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/'>
+<section class='post'>
+<h2>Gérer correctement les accents avec Ruby, Rails et upcase</h2>
+<p>C&#39;est assez étonnant d&#39;avoir encore ce genre de problème de nos jours, mais Ruby (même 1.9.3), ne gère toujours&hellip;</p>
+</section>
+</a>
+<a class='no-cover prev read-next-story' href='/2012/11/16/Paperclip-caching-and-clean-URLs-or-DragonFly-on-the-fly-image-resizing-Get-the-best-of-both-worlds-/'>
+<section class='post'>
+<h2>Paperclip caching and clean URLs or DragonFly on the fly image resizing ? Get the best of both worlds !</h2>
+<p>When it came across image manipulation using Rails, I had to make a choice : Paperclip to handle high&hellip;</p>
+</section>
+</a>
+</aside>
+
+<footer class='site-footer clearfix'>
+<section class='copyright'>
+<a href='/'>Guillaume Barillot</a>
+&copy;
+2015
+</section>
+<section class='poweredby'>
+Casper theme powered by
+<a href='https://ghost.org'>Ghost</a>
+</section>
+</footer>
+</div>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+</body>
+</html>

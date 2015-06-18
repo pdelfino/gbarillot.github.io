@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guillaume Barillot: Ouvrir systématiquement tous les liens extérieurs dans une nouvelle fenêtre</title>
+<meta content='Voila bien une demande systématique de tous les clients : &amp;ldquo;je veux que les liens s&amp;#39;ouvrent dans une nouvelle fenêtre&amp;rdquo;. Certes, c...' name='description'>
+<meta charset='utf-8'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'>
+<meta content='True' name='HandheldFriendly'>
+<link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+<link href="/images/favicon.ico" rel="icon" type="image/ico" />
+<link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+<link href='//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400' rel='stylesheet' type='text/css'>
+</head>
+<body class='post-template nav-closed'>
+<div class='nav'>
+<h3 class='nav-title'>Menu</h3>
+<a class='nav-close' href='#'>
+<span class='hidden'>Close</span>
+</a>
+<ul>
+<li class='nav-home' role='presentation'>
+<a href='/'>Home</a>
+</li>
+</ul>
+<a class='subscribe-button icon-feed' href='/feed.xml'>Subscribe</a>
+</div>
+<span class='nav-cover'></span>
+
+<div class='site-wrapper'>
+<header class='main-header no-cover post-head'>
+<nav class='main-nav clearfix'>
+<a class='menu-button icon-menu' href='#'>
+<span class='word'>Menu</span>
+</a>
+</nav>
+</header>
+<main class='content' role='main'>
+<article class='post'>
+<header class='post-header'>
+<h1 class='post-title'>Ouvrir systématiquement tous les liens extérieurs dans une nouvelle fenêtre</h1>
+<section class='post-meta'>
+<time class='post-date' datetime='2010-11-04'>
+04 November 2010
+</time>
+on <a href='/tag/la-technique/'>la-technique</a>
+</section>
+</header>
+<section class='post-content'><p>Voila bien une demande systématique de <em>tous</em> les clients : &ldquo;je veux que les liens s&#39;ouvrent dans une nouvelle fenêtre&rdquo;. Certes, certes, cela fait des années que tout le monde utilise la fonctionnalité &ldquo;ouvrir dans un nouvel onglet&rdquo; du navigateur afin de choisir ce que l&#39;on fait avec chaque lien, mais peu importe, c&#39;est le client qui décide. Du coup, la p&#39;tite dificulté que cette demande peut engendrer est sur deux plans :*L&#39;attribut &ldquo;target&rdquo; est maintenant &ldquo;deprecated&rdquo;, et il serait vraiment idiot de ne pas valider mes pages xhtml 1.0 uniquement pour cette raison. Donc, pas de &ldquo;target=&rsquo;_blank&rsquo;&rdquo; en dur.</p>
+
+<p>*Enfin, avec un CMS, ce sont les clients qui saisissent eux mêmes les liens, au fil de leur contenu, avec (souvent) une quantité non négligeable de liens pointant
+. Il y a donc des liens qu&#39;il
+ ouvrir dans la même page.
+Une solution évidente au premier abord : ajouter un bouton radio dans la boite de dialogue permettant de créer les liens avec un label genre &ldquo;ouvrir ce lien dans une nouvelle fenêtre&rdquo;. Je crois que c&#39;est typiquement le genre de fausse bonne idée qui va m&#39;amener une floppée de coups de téléphone et de Mails du genre :</p>
+
+<blockquote>
+<p><em>**Client :</em>*
+Ce lien ne s&#39;ouvre pas comme je l&#39;avais demandé !!!</p>
+</blockquote>
+
+<p><em>**Moi :</em>*
+Avez-vous bien coché la case &ldquo;ouvrir dans une nouvelle fenêtre&rdquo; ?</p>
+
+<p><em>**Client :</em>*
+Heuuuu, quelle case ?&hellip;&ldquo;.</p>
+
+<p>Bref, partant de là, j&#39;ai trouvé une idée simple pour tout le monde (et surtout le client), qui fonctionne sans faille, et sans ajouter un seul bouton, tout en restant valide XHTML 1.0. Le truc est tout simplement d&#39;ajouter l&#39;attribut &lsquo;target&rsquo; de façon dynamique au chargement de la page, uniquement sur les liens commençant par &quot;http:&rdquo;. Le tour est joué en seulement 3 lignes de JS (avec prototype) :</p>
+
+<p>function addExtLink(){
+  $$(&#39;a&rsquo;).each(function(this<em>link){
+    if(/^http:/.test(this</em>link.readAttribute(&#39;href&rsquo;))){
+      this<em>link.writeAttribute(&#39;target&rsquo;, &rsquo;</em>blank&rsquo;);
+    }
+  });
+}
+Je vous laisse le soin de charger ça sur &#39;dom:loaded&rsquo;. Voila, c&#39;était mon bout de code à 10c du jour :-).</p>
+</section>
+<footer class='post-footer'>
+<section class='author'>
+<h4>
+<a href='/author/guillaume/'>Guillaume</a>
+</h4>
+<p></p>
+Read
+<a href='/author/guillaume/'>more posts</a>
+by this author.
+</section>
+<section class='share'>
+<h4>Share this post</h4>
+<a class='icon-twitter' href='https://twitter.com/share?text=Ouvrir systématiquement tous les liens extérieurs dans une nouvelle fenêtre&amp;amp;url=http://www.guillaume-barillot.com/2010/11/04/Ouvrir-systmatiquement-tous-les-liens-extrieurs-dans-une-nouvelle-fentre/' onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+<span class='hidden'>Twitter</span>
+</a>
+<a class='icon-facebook' href='https://www.facebook.com/sharer/sharer.php?u=http://www.guillaume-barillot.com/2010/11/04/Ouvrir-systmatiquement-tous-les-liens-extrieurs-dans-une-nouvelle-fentre/' onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+<span class='hidden'>Facebook</span>
+</a>
+<a class='icon-google-plus' href='https://plus.google.com/share?url=http://www.guillaume-barillot.com/2010/11/04/Ouvrir-systmatiquement-tous-les-liens-extrieurs-dans-une-nouvelle-fentre/' onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+<span class='hidden'>Google+</span>
+</a>
+</section>
+</footer>
+</article>
+</main>
+<aside class='read-next'>
+<a class='no-cover read-next-story' href='/2010/11/03/De-belles-Fonts-dans-tous-les-navigateurs-et-sans-prise-de-tte-avec-la-Google-Font-API-/'>
+<section class='post'>
+<h2>De belles Fonts dans tous les navigateurs et sans prise de tête avec la Google Font API </h2>
+<p>Depuis le temps qu&#39;on doit se battre avec des images pour avoir un tant soit peu de variété au&hellip;</p>
+</section>
+</a>
+<a class='no-cover prev read-next-story' href='/2010/11/08/Non-rien-de-rien-non-je-ny-comprend-plus-rien/'>
+<section class='post'>
+<h2>Non, rien de rien... non, je n'y comprend plus rien</h2>
+<p>Petite devinette. Qui était interviewé cette après midi sur BFM et a déclaré distinctement, avec conviction et (apparemment) en&hellip;</p>
+</section>
+</a>
+</aside>
+
+<footer class='site-footer clearfix'>
+<section class='copyright'>
+<a href='/'>Guillaume Barillot</a>
+&copy;
+2015
+</section>
+<section class='poweredby'>
+Casper theme powered by
+<a href='https://ghost.org'>Ghost</a>
+</section>
+</footer>
+</div>
+<script src="/javascripts/application.js" type="text/javascript"></script>
+</body>
+</html>
