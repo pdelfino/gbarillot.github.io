@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://www.example.com/2013/10/26/welcome-to-ghost/index.html</loc>
-    <lastmod>2015-06-18T21:15:12+02:00</lastmod>
+    <loc>http://www.guillaume-barillot.com/2013/10/26/welcome-to-ghost/index.html</loc>
+    <lastmod>2015-06-18T21:31:57+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.example.com/index.html</loc>
-    <lastmod>2015-06-18T21:21:08+02:00</lastmod>
+    <loc>http://www.guillaume-barillot.com/index.html</loc>
+    <lastmod>2015-06-18T21:34:02+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.example.com/author/middleman/index.html</loc>
-    <lastmod>2015-06-18T21:21:08+02:00</lastmod>
+    <loc>http://www.guillaume-barillot.com/author/guillaume/index.html</loc>
+    <lastmod>2015-06-18T21:34:02+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.example.com/tag/getting-started/index.html</loc>
-    <lastmod>2015-06-18T21:21:08+02:00</lastmod>
+    <loc>http://www.guillaume-barillot.com/tag/getting-started/index.html</loc>
+    <lastmod>2015-06-18T21:34:02+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
