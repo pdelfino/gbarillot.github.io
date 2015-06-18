@@ -24,17 +24,6 @@ it is f*** slow
 Solve those 2</summary>
   </entry>
   <entry>
-    <title>SCSS vs Sass vs CSS : mon humble avis</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/"/>
-    <id>http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/</id>
-    <published>2012-09-22T02:00:00+02:00</published>
-    <updated>2015-06-18T23:28:04+02:00</updated>
-    <author>
-      <name>Guillaume</name>
-    </author>
-    <summary type="html">EDIT : J'ai changé d'avis ! Enfin, pas tout à fait, mais je voudrais juste clarifier mon point de vue : si il s'agit juste de monter un Wordpress en one-shot, oui, je maintiens. Par contre si vous créez une appli un minimum complexe, et à fortiori si</summary>
-  </entry>
-  <entry>
     <title>Initialiser un repo Git pour les nuls</title>
     <link rel="alternate" href="http://www.guillaume-barillot.com/2011/02/06/Initialiser-un-repo-Git-pour-les-nuls/"/>
     <id>http://www.guillaume-barillot.com/2011/02/06/Initialiser-un-repo-Git-pour-les-nuls/</id>
@@ -84,5 +73,18 @@ Durant cette</summary>
     </author>
     <summary type="html">Si vous êtes comme moi à toujours rechercher “c'était quoi déja cette commande pour changer un repo ?” et autres manips simples mais pas assez courantes pour vous en rappeler concernant Subversion, je viens de trouver
 LA doc qu'il vous faut. Et en prime</summary>
+  </entry>
+  <entry>
+    <title>Dialoguer facilement avec les serveurs de paiement Paybox depuis Rails</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2010/11/30/Dialoguer-facilement-avec-les-serveurs-de-paiement-Paybox-depuis-Rails/"/>
+    <id>http://www.guillaume-barillot.com/2010/11/30/Dialoguer-facilement-avec-les-serveurs-de-paiement-Paybox-depuis-Rails/</id>
+    <published>2010-11-30T01:00:00+01:00</published>
+    <updated>2015-06-18T23:30:32+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Décidement, les Railers Lyonnais font dans la monétique, ces temps ci… Après l'excelllllent
+plugin pour SIPS/Atos écrit par
+Damien Mathieu il y a peu, j'ai eu cette semaine à m'interfacer avec cet autre grand prestataire du paiement en ligne Hexagonal</summary>
   </entry>
 </feed>

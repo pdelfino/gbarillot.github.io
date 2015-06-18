@@ -60,17 +60,6 @@ Solve those 2</summary>
 Let’s start with an example :# Paperclip</summary>
   </entry>
   <entry>
-    <title>SCSS vs Sass vs CSS : mon humble avis</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/"/>
-    <id>http://www.guillaume-barillot.com/2012/09/22/SCSS-vs-Sass-vs-CSS-mon-humble-avis/</id>
-    <published>2012-09-22T02:00:00+02:00</published>
-    <updated>2015-06-18T23:28:04+02:00</updated>
-    <author>
-      <name>Guillaume</name>
-    </author>
-    <summary type="html">EDIT : J'ai changé d'avis ! Enfin, pas tout à fait, mais je voudrais juste clarifier mon point de vue : si il s'agit juste de monter un Wordpress en one-shot, oui, je maintiens. Par contre si vous créez une appli un minimum complexe, et à fortiori si</summary>
-  </entry>
-  <entry>
     <title>Gérer correctement les accents avec Ruby, Rails et upcase</title>
     <link rel="alternate" href="http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/"/>
     <id>http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/</id>
@@ -82,5 +71,16 @@ Let’s start with an example :# Paperclip</summary>
     <summary type="html">C'est assez étonnant d'avoir encore ce genre de problème de nos jours, mais Ruby (même 1.9.3), ne gère toujours pas correctement les passages de caractères accentués en majuscule. Explication :&amp;gt; puts “café”.upcase
 CAFé
 Pas terrible, hein ? Une solution</summary>
+  </entry>
+  <entry>
+    <title>Un premier avis sur Spree (plateforme Ecommerce pour Ruby on Rails)</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2011/11/02/Un-premier-avis-sur-Spree-plateforme-Ecommerce-pour-Ruby-on-Rails/"/>
+    <id>http://www.guillaume-barillot.com/2011/11/02/Un-premier-avis-sur-Spree-plateforme-Ecommerce-pour-Ruby-on-Rails/</id>
+    <published>2011-11-02T01:00:00+01:00</published>
+    <updated>2015-06-18T23:29:28+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Depuis bientôt trois ans que je pratique quotidiennement Ruby on Rails, il est toujours resté pour moi une problématique encore non résolue : “et pour le E-Commerce, on fait comment ?”. Je dois bien le dire, pour l'instant : “je fais comme je peux”. En</summary>
   </entry>
 </feed>
