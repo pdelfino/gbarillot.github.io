@@ -2460,3 +2460,11 @@ pre {
 .rounded {
   border-radius: 50%;
   width: 150px; }
+
+/* line 15, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+.main-header-content.inner h1.page-title a {
+  text-decoration: none !important; }
+
+/* line 18, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+ul.no-bullet {
+  list-style-type: none; }
