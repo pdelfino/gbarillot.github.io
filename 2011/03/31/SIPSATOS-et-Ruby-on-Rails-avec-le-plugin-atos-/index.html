@@ -10,6 +10,7 @@
 <link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
 <link href="/images/favicon.ico" rel="icon" type="image/ico" />
 <link href="/stylesheets/application.css" rel="stylesheet" type="text/css" />
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
 <link href='//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400' rel='stylesheet' type='text/css'>
 </head>
 <body class='post-template nav-closed'>
@@ -21,6 +22,9 @@
 <ul>
 <li class='nav-home' role='presentation'>
 <a href='/'>Home</a>
+</li>
+<li class='nav-about' role='presentation'>
+<a href='/about'>About</a>
 </li>
 </ul>
 <a class='subscribe-button icon-feed' href='/feed.xml'>Subscribe</a>
@@ -126,8 +130,7 @@ Et hop, on obtiens un joli Hash avec toutes les variables de réponse disponible
 
 <p>*Les URL de retour (normal/cancel) sont envoyées par POST, n&#39;oubliez donc pas d&#39;écouter aussi en POST les routes correspondantes</p>
 
-<p><em>C&#39;est idiot mais ne pas oublier de lever la protection CSRF pour l&#39;auto response (par rapport à mon exemple, ce serait &ldquo;protect<em>from</em>forgery :except=&gt;:validate&rdquo;). Sans quoi l&#39;auto-response ne sera jamais recevable par votre controller. C&#39;est c</em>* mais ça m&#39;a couté 30mn d&#39;arrachage de cheveux :-/.
-Vous pouvez m&#39;envoyer un Mail si vous avez des problèmes, je ne garantie rien, mais j&#39;essaierai de répondre.</p>
+<p>*C&#39;est idiot mais ne pas oublier de lever la protection CSRF pour l&#39;auto response (par rapport à mon exemple, ce serait &ldquo;protect<em>from</em>forgery :except=&gt;:validate&rdquo;). Sans quoi l&#39;auto-response ne sera jamais recevable par votre controller.</p>
 </section>
 <footer class='post-footer'>
 <section class='author'>

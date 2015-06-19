@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.guillaume-barillot.com/about/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.guillaume-barillot.com/2008/12/26/Le-Hack-CSS-du-jour/index.html</loc>
     <lastmod>2015-06-18T23:38:39+02:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -193,12 +199,6 @@
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://www.guillaume-barillot.com/2010/11/04/Ouvrir-systmatiquement-tous-les-liens-extrieurs-dans-une-nouvelle-fentre/index.html</loc>
-    <lastmod>2015-06-18T23:30:42+02:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
     <loc>http://www.guillaume-barillot.com/2010/11/08/Non-rien-de-rien-non-je-ny-comprend-plus-rien/index.html</loc>
     <lastmod>2015-06-18T23:30:37+02:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -260,7 +260,7 @@
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/2011/03/31/SIPSATOS-et-Ruby-on-Rails-avec-le-plugin-atos-/index.html</loc>
-    <lastmod>2015-06-18T23:29:51+02:00</lastmod>
+    <lastmod>2015-06-19T09:10:05+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -320,199 +320,247 @@
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/la-technique/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ruby-on-rails/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/linux/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/business/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ya-pas-que-le-boulot/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/php/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/les-gouts-et-les-couleurs/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/2/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/3/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/4/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/5/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/6/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/7/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/8/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.guillaume-barillot.com/about/page/9/index.html</loc>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/2/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/3/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/4/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/5/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/6/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/7/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/8/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/page/9/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/2/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/3/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/4/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/5/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/6/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/7/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/8/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/author/guillaume/page/9/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/la-technique/page/2/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/la-technique/page/3/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ruby-on-rails/page/2/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ruby-on-rails/page/3/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ruby-on-rails/page/4/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ruby-on-rails/page/5/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ya-pas-que-le-boulot/page/2/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://www.guillaume-barillot.com/tag/ya-pas-que-le-boulot/page/3/index.html</loc>
-    <lastmod>2015-06-18T23:40:47+02:00</lastmod>
+    <lastmod>2015-06-19T10:09:41+02:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
