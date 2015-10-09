@@ -5,22 +5,35 @@
   <id>http://www.guillaume-barillot.com</id>
   <link href="http://www.guillaume-barillot.com"/>
   <link href="http://www.guillaume-barillot.com/feed.xml" rel="self"/>
-  <updated>2015-06-22T23:34:00+02:00</updated>
+  <updated>2015-08-15T10:59:00+02:00</updated>
   <author>
     <name>Guillaume</name>
   </author>
+  <entry>
+    <title>A better organisation for JS/Jquery code base using Rails and Coffeescript</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/"/>
+    <id>http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/</id>
+    <published>2015-08-15T10:59:00+02:00</published>
+    <updated>2015-10-10T00:29:41+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Once upon a time, there were two very, very distant planets… the first one was using brand new shiny full stack JS Frameworks, that handle rooting, templating, data binding. 
+On this planet, apps were blazing fast.
+The second planet was generating plain</summary>
+  </entry>
   <entry>
     <title>Good bye freelancing</title>
     <link rel="alternate" href="http://www.guillaume-barillot.com/2015/06/22/good-bye-freelancing/"/>
     <id>http://www.guillaume-barillot.com/2015/06/22/good-bye-freelancing/</id>
     <published>2015-06-22T23:34:00+02:00</published>
-    <updated>2015-06-23T00:18:40+02:00</updated>
+    <updated>2015-10-10T00:32:18+02:00</updated>
     <author>
       <name>Guillaume</name>
     </author>
-    <summary type="html">It’s been now 3 months that I have been officialy hired, 3 months that I’m not a freelancer no more.
+    <summary type="html">It’s been now 3 months since I have been officialy hired, 3 months that I’m not a freelancer no more.
 In a way, it’s kinda funny that the exact same things that really thrilled me, are also those
-that just bored me, at the same time. First of all was project</summary>
+that just bored me, at the same time. First of all was</summary>
   </entry>
   <entry>
     <title>Fifteen years using linux... and I just switched to a Mac</title>
@@ -70,18 +83,5 @@ Solve those 2</summary>
     <summary type="html">When it came across image manipulation using Rails, I had to make a choice : Paperclip to handle high traffic/popular websites, and DragonFly for privates, more confidential but also more evolutive applications.
 
 Let’s start with an example :# Paperclip</summary>
-  </entry>
-  <entry>
-    <title>Gérer correctement les accents avec Ruby, Rails et upcase</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/"/>
-    <id>http://www.guillaume-barillot.com/2012/08/14/Grer-correctement-les-accents-avec-Ruby-Rails-et-upcase/</id>
-    <published>2012-08-14T02:00:00+02:00</published>
-    <updated>2015-06-18T23:28:09+02:00</updated>
-    <author>
-      <name>Guillaume</name>
-    </author>
-    <summary type="html">C'est assez étonnant d'avoir encore ce genre de problème de nos jours, mais Ruby (même 1.9.3), ne gère toujours pas correctement les passages de caractères accentués en majuscule. Explication :&amp;gt; puts “café”.upcase
-CAFé
-Pas terrible, hein ? Une solution</summary>
   </entry>
 </feed>
