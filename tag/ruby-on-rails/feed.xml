@@ -14,13 +14,12 @@
     <link rel="alternate" href="http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/"/>
     <id>http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/</id>
     <published>2015-08-15T10:59:00+02:00</published>
-    <updated>2015-10-10T00:38:30+02:00</updated>
+    <updated>2015-10-10T09:36:41+02:00</updated>
     <author>
       <name>Guillaume</name>
     </author>
     <summary type="html">Once upon a time, there were two very, very distant planets… the first one was using brand new shiny full stack JS Frameworks, that handle rooting, templating, data binding. 
-On this planet, apps were blazing fast.
-The second planet was generating plain</summary>
+On this planet, apps were blazing fast, Javascript files were well organised</summary>
   </entry>
   <entry>
     <title>Switch from Selenium+Firefox to Poltergeist+Phantomjs and speed up your test suite </title>
