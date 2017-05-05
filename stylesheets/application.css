@@ -2468,3 +2468,7 @@ pre {
 /* line 18, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
 ul.no-bullet {
   list-style-type: none; }
+
+/* line 21, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+.no-cover {
+  background-color: #fff !important; }

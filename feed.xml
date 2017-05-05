@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Guillaume Barillot</title>
-  <subtitle>I build stuff</subtitle>
+  <title>I build stuff</title>
+  <subtitle>~</subtitle>
   <id>http://www.guillaume-barillot.com</id>
   <link href="http://www.guillaume-barillot.com"/>
   <link href="http://www.guillaume-barillot.com/feed.xml" rel="self"/>
