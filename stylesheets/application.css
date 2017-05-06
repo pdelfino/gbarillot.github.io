@@ -2454,21 +2454,51 @@ body:not(.post-template) .post-title {
 pre {
   background: transparent;
   border-style: none;
-  padding: initial; }
+  padding: initial;
+  overflow: auto; }
 
 /* line 11, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+.code {
+  overflow: auto; }
+
+/* line 15, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
 .rounded {
   border-radius: 50%;
   width: 150px; }
 
-/* line 15, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+/* line 19, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
 .main-header-content.inner h1.page-title a {
   text-decoration: none !important; }
 
-/* line 18, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+/* line 22, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
 ul.no-bullet {
   list-style-type: none; }
 
-/* line 21, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+/* line 25, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
 .no-cover {
   background-color: #fff !important; }
+
+/* line 28, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+.social {
+  position: fixed;
+  top: 0;
+  z-index: 1000; }
+
+@media (max-width: 768px) {
+  /* line 34, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+  .social {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin: auto; }
+
+  /* line 40, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+  .social ul {
+    width: 100%;
+    text-align: center;
+    margin-left: -20px; }
+
+  /* line 45, /Users/guillaume/www/middleman/blog/source/stylesheets/application.css.scss */
+  .social li {
+    display: inline-block;
+    margin-right: 20px; } }
