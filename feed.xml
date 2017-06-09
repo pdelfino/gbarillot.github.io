@@ -5,21 +5,23 @@
   <id>http://www.guillaume-barillot.com</id>
   <link href="http://www.guillaume-barillot.com"/>
   <link href="http://www.guillaume-barillot.com/feed.xml" rel="self"/>
-  <updated>2015-08-15T10:59:00+02:00</updated>
+  <updated>2017-06-09T17:23:00+02:00</updated>
   <author>
     <name>Guillaume</name>
   </author>
   <entry>
-    <title>A better organisation for JS/Jquery code base using Rails and Coffeescript</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/"/>
-    <id>http://www.guillaume-barillot.com/2015/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/</id>
-    <published>2015-08-15T10:59:00+02:00</published>
-    <updated>2015-10-10T09:36:41+02:00</updated>
+    <title>How to to make vim to look like Atom</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2017/06/09/how-to-to-make-vim-to-look-like-atom/"/>
+    <id>http://www.guillaume-barillot.com/2017/06/09/how-to-to-make-vim-to-look-like-atom/</id>
+    <published>2017-06-09T17:23:00+02:00</published>
+    <updated>2017-06-10T00:01:19+02:00</updated>
     <author>
       <name>Guillaume</name>
     </author>
-    <summary type="html">Once upon a time, there were two very, very distant planets… the first one was using brand new shiny full stack JS Frameworks, that handle rooting, templating, data binding. 
-On this planet, apps were blazing fast, Javascript files were well organised</summary>
+    <summary type="html">Why, and who is this for?
+
+I love Atom. Really. Nonetheless, it has the bad habit to turn my 8G RAM MacBook into a big lazy slug.
+Moving back to Sublime text is not really a good idea, since I’m a bit afraid of its future, at least for the V2 licence</summary>
   </entry>
   <entry>
     <title>Good bye freelancing</title>
@@ -33,6 +35,18 @@ On this planet, apps were blazing fast, Javascript files were well organised</su
     <summary type="html">It’s been now 3 months since I have been officialy hired, 3 months that I’m not a freelancer no more.
 In a way, it’s kinda funny that the exact same things that really thrilled me, are also those
 that just bored me, at the same time. First of all was</summary>
+  </entry>
+  <entry>
+    <title>A better organisation for JS/Jquery code base using Rails and Coffeescript</title>
+    <link rel="alternate" href="http://www.guillaume-barillot.com/2014/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/"/>
+    <id>http://www.guillaume-barillot.com/2014/08/15/a-better-organisation-for-your-js-using-rails-coffeescript/</id>
+    <published>2014-08-15T10:59:00+02:00</published>
+    <updated>2017-06-09T23:19:07+02:00</updated>
+    <author>
+      <name>Guillaume</name>
+    </author>
+    <summary type="html">Once upon a time, there were two very, very distant planets… the first one was using brand new shiny full stack JS Frameworks, that handle rooting, templating, data binding. 
+On this planet, apps were blazing fast, Javascript files were well organised</summary>
   </entry>
   <entry>
     <title>Fifteen years using linux... and I just switched to a Mac</title>
@@ -69,18 +83,5 @@ that just bored me, at the same time. First of all was</summary>
 
 it is f*** slow
 Solve those 2</summary>
-  </entry>
-  <entry>
-    <title>Paperclip caching and clean URLs or DragonFly on the fly image resizing ? Get the best of both worlds !</title>
-    <link rel="alternate" href="http://www.guillaume-barillot.com/2012/11/16/Paperclip-caching-and-clean-URLs-or-DragonFly-on-the-fly-image-resizing-Get-the-best-of-both-worlds-/"/>
-    <id>http://www.guillaume-barillot.com/2012/11/16/Paperclip-caching-and-clean-URLs-or-DragonFly-on-the-fly-image-resizing-Get-the-best-of-both-worlds-/</id>
-    <published>2012-11-16T01:00:00+01:00</published>
-    <updated>2015-06-18T23:27:58+02:00</updated>
-    <author>
-      <name>Guillaume</name>
-    </author>
-    <summary type="html">When it came across image manipulation using Rails, I had to make a choice : Paperclip to handle high traffic/popular websites, and DragonFly for privates, more confidential but also more evolutive applications.
-
-Let’s start with an example :# Paperclip</summary>
   </entry>
 </feed>
