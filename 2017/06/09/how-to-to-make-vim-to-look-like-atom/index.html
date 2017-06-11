@@ -68,43 +68,42 @@
 on <a href='/tag/vim/'>vim</a>
 </section>
 </header>
-<section class='post-content'><h4>Why, and who is this for?</h4>
+<section class='post-content'><h2>Why, and who is this for?</h2>
 
 <p>I love Atom. Really. Nonetheless, it has the bad habit to turn my 8G RAM MacBook into a big lazy slug.
 Moving back to Sublime text is not really a good idea, since I&rsquo;m a bit afraid of its future, at least for the V2 licence I bought about 6 years ago, and I have no plan
 to buy a new licence for the V3.</p>
 
-<p>So&hellip; what&rsquo;s left? I need a simple/dumb editor (no autocomplete all the way and code introspection needed), FAST and cross-platform.
+<p>So&hellip; what&rsquo;s left? I need a simple/dumb editor (no autocomplete all the way and code introspection), FAST and cross-platform.
 Open Source should be mandatory too. Ideally, it could be great if I could learn to use a tool that I would not have to abandon in a few years, like I did with all
 my previous editors. Then I saw <a href="https://twitter.com/fabi1cazenave?lang=fr">Fabien Cazenave</a> using Vim in a workshop, it started to feel a <em>little bit</em> less scary, and I decided to give it a try.</p>
 
 <p>If you&rsquo;re an hardcore Vim user, you can pass your way. No, I didn&rsquo;t deactivate the mouse, no I do still use the arrow keys and I&rsquo;m
 really happy with it. Now, if you&rsquo;re like me a few weeks ago, more or less at the &ldquo;:wq&rdquo; level, and start struggling each time you have to
 comment a 4 lines block in one shot, this blog post may put some light on what&rsquo;s possible with Vim.
-Do no longer be afraid: with a good config file, a few tips and tricks and the help of some plugins, it can be easy. No, I mean, really.</p>
+Do no longer be afraid: with a good config file, a few tips and tricks and the help of some plugins, it can be <del>easy</del> accessible.</p>
 
-<h4>0. A short demo</h4>
+<h2>0. Short demo</h2>
 
-<p><br />
-Yes, Vim can be way more sexy than what you&rsquo;d expect<br>
+<p>Vim can be way more sexy than what you&rsquo;d expect<br>
 <br />
 <video width="100%" controls>
-  <source src="/images/vim_custom.mp4" type="video/mp4">
+  <source src="https://s3.amazonaws.com/gbarillot-blog/vim_custom.mp4" type="video/mp4">
 </video>
 <br /></p>
 
-<h4>1. Make sure your terminal accepts true colors rendering</h4>
+<h2>1. Make sure your terminal accepts true colors rendering</h2>
 
 <p>Come one, we&rsquo;re in 2017, why should we stay stuck with those ugly 256 colors display?!
 As a Mac user, I only had to download and install <a href="https://www.iterm2.com/downloads.html">iTerm2</a>. It automatically detected I was using ZSH and installation was a breeze.
 If you&rsquo;re using Linux, you may have a look at <a href="https://gist.github.com/XVilka/8346728">this page</a>.</p>
 
-<h4>2. Download and install powerline fonts</h4>
+<h2>2. Download and install powerline fonts</h2>
 
-<p>Since we&rsquo;ll be using Airline (a plugin) to show up additionnal infos like the current mode, Git Branch&hellip; you&rsquo;ll need some patched fonts so Vim could display chars that are usually inexistent. This one should be simple too, just go <a href="https://github.com/powerline/fonts">here</a>, download the fonts and install them on your system.
+<p>Since we&rsquo;ll be using Airline (a plugin) to show up additionnal infos like the current mode, Git Branch&hellip; we&rsquo;ll need some patched fonts so Vim could display chars that are usually inexistent. This one should be simple too, just go <a href="https://github.com/powerline/fonts">here</a>, download the fonts and install them on your system.
 If you stick to my Vim config file, actually, you should only have to install &ldquo;Deja Vu Sans&rdquo;.</p>
 
-<h4>3. BACKUP your original vim config and files</h4>
+<h2>3. Backup your original vim config and files</h2>
 
 <p>(cause if you don&rsquo;t have a backup, don&rsquo;t change nothing ™)</p>
 <div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1
@@ -113,12 +112,12 @@ If you stick to my Vim config file, actually, you should only have to install &l
 </pre></td></tr></tbody></table>
 </div>
 
-<h4>4. Download the main Vim config</h4>
+<h2>4. Download the main Vim config</h2>
 <div class="highlight shell"><table style="border-spacing: 0"><tbody><tr><td class="gutter gl" style="text-align: right"><pre class="lineno">1</pre></td><td class="code"><pre>  <span class="nb">cd</span> ~ <span class="o">&amp;&amp;</span> git clone https://github.com/gbarillot/vimrc <span class="o">&amp;&amp;</span> mv vimrc .vimrc
 </pre></td></tr></tbody></table>
 </div>
 
-<h4>5. Install all plugins</h4>
+<h2>5. Install all plugins</h2>
 
 <p>Plug is the only Plugin manager I used. Go <a href="https://github.com/junegunn/vim-plug">install it</a>, and once done, 
 let&rsquo;s open up our config file:</p>
@@ -129,21 +128,20 @@ let&rsquo;s open up our config file:</p>
 <p>Now, type &ldquo;:&rdquo; (you should see the colon character appearing at the bottom left of the screen), followed by &ldquo;PlugInstall&rdquo;.
 If everything goes fine, you should see the screen split in 2, with download and installations status on the left.</p>
 
-<h4>6. Enjoy!</h4>
+<h2>6. Enjoy!</h2>
 
 <p>All plugins are correctly installed? Great, close the current file (the legendary &ldquo;Escape :wq&rdquo;), and re-open up Vim with one of your
 project&hellip;. Done? Ok, now, take your time and read the next few lines to grasp how we can actually use it.  </p>
 
 <p><br /></p>
 
-<h4>How the F§#&amp;* do I use this now?!</h4>
+<h2>How the F§#&amp;* do I use this now?!</h2>
 
 <p><br /></p>
 
-<h4>The basics</h4>
+<h2>The basics</h2>
 
-<p><br />
-<strong>[escape</strong>] : go back to normal mode (you know, this NOT so normal mode where nothing appears when you type)<br>
+<p><strong>[escape</strong>] : go back to normal mode (you know, this NOT so normal mode where nothing appears when you type)<br>
 <strong>[escape i</strong>] : enter insert mode, what you type is what appears on the screen<br>
 <strong>[escape v]</strong> : enter visual mode, you can visually select sections of code, both vertically and horizontally<br>
 <strong>[y]</strong> : &ldquo;Yank&rdquo;, aka &ldquo;Copy&rdquo;<br>
@@ -152,10 +150,9 @@ project&hellip;. Done? Ok, now, take your time and read the next few lines to gr
 
 <p><br /></p>
 
-<h5>Essentials</h5>
+<h3>Essentials</h3>
 
-<p><br />
-<strong>$</strong>  : get to the end of line<br>
+<p><strong>$</strong>  : get to the end of line<br>
 <strong>[shift] 0</strong> : get to start of line<br>
 <strong>dd</strong> : delete current line<br>
 <strong>yy</strong> : copy the whole current line<br>
@@ -167,10 +164,9 @@ project&hellip;. Done? Ok, now, take your time and read the next few lines to gr
 
 <p><br /></p>
 
-<h4>Searching</h4>
+<h3>Searching</h3>
 
-<p><br />
-Search for all files containing the word &ldquo;users&rdquo; anywhere in the app directory, recursively:</p>
+<p>Search for all files containing the word &ldquo;users&rdquo; anywhere in the app directory, recursively:</p>
 
 <p><strong>:vimgrep users app/</strong> **</p>
 
@@ -182,10 +178,9 @@ Search for all files containing the word &ldquo;users&rdquo; anywhere in the app
 
 <p><br /></p>
 
-<h5>Some of the cool things you get with this config</h5>
+<h3>Some of the cool things you get with this config</h3>
 
-<p><br />
-<strong>[Control f]</strong> : Toggle the NERDTree file explorer on the left<br>
+<p><strong>[Control f]</strong> : Toggle the NERDTree file explorer on the left<br>
 <strong>[Control o] / [Control p]</strong> : Go one buffer (== tab on Atom) to the left / one buffer to the right<br>
 <strong>[Control s]</strong> : Save. Cause I don&rsquo;t know about you, but spreading my fingers all across the keyboard for &ldquo;Escape : w&rdquo; always sounded weird to me<br>
 <strong>[Control q]</strong> : Quit. Close the tab you&rsquo;re in (ok, buffer with this Vim config), without closing the whole Vim session<br>
@@ -194,25 +189,25 @@ Search for all files containing the word &ldquo;users&rdquo; anywhere in the app
 <p><strong>Plus&hellip;</strong></p>
 
 <ul>
-<li>copy/paste buffer use sytem buffer by default, so you can copy/paste from your browser directly into Vim, and the reverse</li>
+<li>copy/paste uses sytem buffer by default, so you can copy/paste from your browser directly into Vim, and the reverse</li>
 <li>search results automatically open up in a new splited window</li>
 <li>Swap files are not created (note that this could be seen <a href="https://news.ycombinator.com/item?id=1688068">as a bad idea</a>&hellip; personnaly, not a problem)</li>
 <li>Syntax highlighting for most common languages: Ruby, PHP, HTML, (S)CSS&hellip; and also HAML, Coffeescript, Pug (jade) and Vue</li>
 <li>Autocompletion (using <a href="https://github.com/ervandew/supertab]">Supertab</a>)</li>
-<li>Auto closing for quotes, brackets&hellip;</li>
+<li>Auto closing quotes, brackets&hellip;</li>
 <li>Basic auto indent + landmarks for indentation levels<br></li>
 <li>You can still use the arrow keys</li>
 <li>The mouse is usable (though you may consider visual mode, most of the time)</li>
 </ul>
 
-<h4>And now the big question&hellip;</h4>
+<h3>And now the big question&hellip;</h3>
 
-<p>So, am I more productive now?! Honnestly?&hellip; No ;-). Probably about 5-10% less productive I&rsquo;d say, for now. That&rsquo;s why I still use Atom at work, unless I need to do 
-multiple CPU/RAM intensive tasks at the same time on my machine. On the other hand, I appreciate to use Vim on my pet projects. Surprisingly, I feel like 
-I&rsquo;m not wasting time on the same things when I use Atom, compared to Vim. The thing is, their nothing I can do to speed up Atom, as for Vim, with some training,
- there&rsquo;s no doubt I&rsquo;ll feel really comfortable (and productive) in a few weeks. </p>
+<p>So, am I more productive now?! Well&hellip; No ;-). I&rsquo;d say, probably, something about 5%-10% less productive. That&rsquo;s why I still use Atom at work, unless I need to do 
+multiple CPU/RAM intensive tasks at the same time on my machine. On the other hand, I have to admit that, most of the time, I&rsquo;m already more productive as long
+ as I stay in the same file. I just waste a bit more time when I have to move/duplicate/rename files within a project, and &ldquo;search in files&rdquo; results are also a bit less easy to read and use, IMHO.  </p>
 
-<p>Finally, I really think Vim is great, definitely not &ldquo;old&rdquo; neither &ldquo;outdated&rdquo;, but still, it requires more brain cycle if you want to get things done fast.</p>
+<p>All in all, I think it&rsquo;s just a question of time before I really get used to Vim usage, and that&rsquo;s why I&rsquo;m now using it on my pet projects. I see it as an investment, and
+ as we all know, an investment needs some time before it starts to pay back!</p>
 </section>
 <footer class='post-footer'>
 <section class='author'>
